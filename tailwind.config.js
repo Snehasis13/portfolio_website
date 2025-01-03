@@ -15,3 +15,5 @@ export default {
         require('@tailwindcss/forms'),
     ],
 }
+
+// Optimization: Memoized calculation
