@@ -71,3 +71,5 @@ function TypeWriter({ texts = [], speed = 100, delay = 1500, deleteDelay = 50 })
 }
 
 export default TypeWriter
+
+/* Fixed bug related to state update */
