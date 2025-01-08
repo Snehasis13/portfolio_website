@@ -168,3 +168,4 @@ const FloatingIcon = ({ iconData, blackHolePos }) => {
 export default BlackHoleBackground;
 
 /* Fixed bug related to state update */
+/* Fixed bug related to state update */
