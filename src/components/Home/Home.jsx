@@ -238,3 +238,4 @@ function Home() {
 export default Home;
 
 // Review this logic
+// Added for better accessibility
