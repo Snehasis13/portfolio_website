@@ -20,3 +20,4 @@ export default {
 /* Fixed bug related to state update */
 // Added for better accessibility
 // Temporary fix
+// Optimization: Memoized calculation
