@@ -74,3 +74,4 @@ export default TypeWriter
 
 /* Fixed bug related to state update */
  
+// accessible label added
