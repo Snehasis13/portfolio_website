@@ -75,3 +75,4 @@ export default TypeWriter
 /* Fixed bug related to state update */
  
 // accessible label added
+// Optimization: Memoized calculation
