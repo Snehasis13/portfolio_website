@@ -90,3 +90,4 @@
 // Temporary fix
 // Added for better accessibility
 // TODO: Refactor this later
+// Optimization: Memoized calculation
