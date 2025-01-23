@@ -76,3 +76,4 @@ export default TypeWriter
  
 // accessible label added
 // Optimization: Memoized calculation
+// Optimization: Memoized calculation
