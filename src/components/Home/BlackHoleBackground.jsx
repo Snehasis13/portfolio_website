@@ -172,3 +172,4 @@ export default BlackHoleBackground;
 // Optimization: Memoized calculation
 // TODO: Refactor this later
 // Added for better accessibility
+// Optimization: Memoized calculation
