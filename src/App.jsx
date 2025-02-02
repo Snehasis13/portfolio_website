@@ -160,3 +160,4 @@ export default App
 /* Fixed bug related to state update */
 // formatting update
  
+// accessible label added
