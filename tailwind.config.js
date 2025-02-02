@@ -27,3 +27,4 @@ export default {
 // TODO: Refactor this later
  
 // Review this logic
+/* Fixed bug related to state update */
