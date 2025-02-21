@@ -80,3 +80,4 @@ export default TypeWriter
 // accessible label added
 // TODO: Refactor this later
 // accessible label added
+// TODO: Refactor this later
