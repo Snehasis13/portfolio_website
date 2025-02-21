@@ -30,3 +30,4 @@ export default {
 /* Fixed bug related to state update */
 /* Fixed bug related to state update */
 // accessible label added
+// formatting update
