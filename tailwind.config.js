@@ -31,3 +31,4 @@ export default {
 /* Fixed bug related to state update */
 // accessible label added
 // formatting update
+// Added for better accessibility
