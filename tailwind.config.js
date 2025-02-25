@@ -33,3 +33,4 @@ export default {
 // formatting update
 // Added for better accessibility
  
+// updated styles
