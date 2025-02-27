@@ -94,3 +94,4 @@
 // Optimization: Memoized calculation
 // Review this logic
  
+// Added for better accessibility
