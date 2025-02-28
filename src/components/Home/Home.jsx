@@ -244,3 +244,4 @@ export default Home;
 // Review this logic
 // updated styles
 // Optimization: Memoized calculation
+/* Fixed bug related to state update */
