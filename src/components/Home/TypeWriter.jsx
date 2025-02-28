@@ -81,3 +81,4 @@ export default TypeWriter
 // TODO: Refactor this later
 // accessible label added
 // TODO: Refactor this later
+// Optimization: Memoized calculation
