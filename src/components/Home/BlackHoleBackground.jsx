@@ -175,3 +175,4 @@ export default BlackHoleBackground;
 // Optimization: Memoized calculation
 // Temporary fix
  
+// accessible label added
