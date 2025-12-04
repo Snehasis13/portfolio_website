@@ -40,7 +40,7 @@ const Preloader = memo(function Preloader() {
           animate={{ scale: 1 }}
           transition={{ duration: isMobile ? 0.4 : 0.6, ease: "easeOut" }}
         >
-          <div className="w-50 h-50 rounded-b-lg flex items-center justify-center pl-10">
+          <div className="w-32 h-32 mx-auto rounded-b-lg flex items-center justify-center">
             <img
               src="/logo.png"
               alt="Snehasis"
