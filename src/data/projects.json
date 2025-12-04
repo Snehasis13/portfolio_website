@@ -22,43 +22,42 @@
   },
   {
     "id": 2,
-    "title": "HiRevo - AI Interviewer Platform",
-    "description": "A modern platform for developers to share, discover, and collaborate on code snippets. Features secure authentication, multi-language support (70+), real-time collaboration, and notification system. Built with Spring Boot backend and React frontend.",
-    "image": "https://github.com/giasinguyen/CodeHub/raw/main/CodeHub-Frontend/public/CodeHub-Logo-nobg.png",
+    "title": "HiRevo :- AI Interviewer Platform",
+    "description": "An AI-powered interview platform that simulates real technical interviews using NLP and LLM-based evaluation. Includes role-based authentication, dynamic question generation, answer analysis, real-time scoring, and detailed interview feedback. Designed to help students and professionals practice interviews with an interactive and intelligent system.",
+    "image": "/hirevo.png",
     "tags": [
-      "Spring Boot",
-      "React",
-      "JWT",
-      "WebSocket",
-      "STOMP.js",
-      "MariaDB",
-      "Cloudinary",
-      "Monaco Editor"
+      "Next.js",
+      "FireStore",
+      "LLM",
+      "Vapi",
+      "JWT Auth",
+      "TailwindCSS",
+      "AI Workflow"
     ],
     "category": "fullstack",
-    "githubUrl": "https://github.com/giasinguyen/CodeHub",
-    "demoUrl": "https://github.com/giasinguyen/CodeHub",
+    "githubUrl": "https://github.com/Snehasis13/HiRevo",
+    "demoUrl": "https://inter-viewer.vercel.app/",
     "period": "June 2025 - July 2025",
     "role": "Fullstack Developer",
     "teamSize": 1
   },
   {
     "id": 3,
-    "title": "PathAI :- AI powered Career Coach Platform",
-    "description": "Premium Organic Food E-commerce Platform with comprehensive features including product browsing, shopping cart, JWT-secured authentication, admin dashboard for customers, orders, inventory, and analytics. Integrated with Cloudinary for image management.",
-    "image": "https://github.com/giasinguyen/NatureGrain/raw/main/FrontEnd/public/Naturegrain.png",
+    "title": "PathAI :– AI-Powered Career Coach Platform",
+    "description": "An AI-driven career guidance platform that analyzes market trends and recommends the best career paths for users based on current industry demand. Allows users to generate professional resumes, take MCQ-based skill assessments, and receive personalized role insights powered by Gemini AI. Built with a scalable architecture using Next.js, Prisma ORM, NeonDB, and Clerk authentication.",
+    "image": "/pathai.png",
     "tags": [
-      "Spring Boot",
-      "React",
-      "JWT",
-      "Spring Security",
-      "MySQL",
-      "Cloudinary",
-      "Chart.js"
+      "Next.js",
+      "Prisma",
+      "NeonDB",
+      "TailwindCSS",
+      "Gemini API",
+      "Clerk Auth",
+      "JavaScript"
     ],
     "category": "fullstack",
-    "githubUrl": "https://github.com/giasinguyen/NatureGrain",
-    "demoUrl": "https://github.com/giasinguyen/NatureGrain",
+    "githubUrl": "https://github.com/Snehasis13/PATHAI",
+    "demoUrl": "https://pathaii.vercel.app/",
     "period": "May 2025 - June 2025",
     "role": "Fullstack Developer",
     "teamSize": 1
@@ -66,8 +65,8 @@
   {
     "id": 4,
     "title": "DavTalk :-  Chat application ",
-    "description": "Modern online footwear platform with React.js + Node.js/Express + MongoDB. Features include product filtering/search, shopping cart, checkout, wishlist, order history. Delivered responsive, user-friendly shopping experience and efficient admin system.",
-    "image": "https://insacmau.com/wp-content/uploads/2024/11/logo-giay-dep-nam-12.jpg",
+    "description": "chat appliaction",
+    "image": "/pathai.png",
     "tags": [
       "React.js",
       "Node.js",
@@ -78,17 +77,17 @@
       "Framer Motion"
     ],
     "category": "fullstack",
-    "githubUrl": "https://github.com/giasinguyen/SoleStore-App",
-    "demoUrl": "https://github.com/giasinguyen/SoleStore-App",
+    "githubUrl": "https://github.com/Snehasis13/Chat_App",
+    "demoUrl": "",
     "period": "March 2025 - April 2025",
     "role": "Team Leader & Fullstack Developer",
     "teamSize": 2
   },
   {
     "id": 5,
-    "title": "Magma :- Estate Website",
-    "description": "Desktop-based system for optimizing restaurant operations and enhancing customer experience. Features table reservations, customer profiles & loyalty, billing & invoices, employee management, revenue & customer analytics.",
-    "image": "https://github.com/giasinguyen/huongbien-restaurant-system/blob/main/HuongBienRestaurant/src/main/resources/com/huongbien/img/readme/login-ui.png?raw=true",
+    "title": "Magma :- Real-State Website",
+    "description": "Estate website",
+    "image": "/pathai.png",
     "tags": [
       "Java",
       "JavaFX",
@@ -97,8 +96,8 @@
       "IntelliJ IDEA"
     ],
     "category": "backend",
-    "githubUrl": "https://github.com/giasinguyen/HuongBien",
-    "demoUrl": "https://github.com/giasinguyen/HuongBien",
+    "githubUrl": "",
+    "demoUrl": "",
     "period": "October 2024 - December 2024",
     "role": "Team Leader",
     "teamSize": 4
