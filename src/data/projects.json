@@ -23,8 +23,8 @@
   {
     "id": 2,
     "title": "HiRevo :- AI Interviewer Platform",
-    "description": "An AI-powered interview platform that simulates real technical interviews using NLP and LLM-based evaluation. Includes role-based authentication, dynamic question generation, answer analysis, real-time scoring, and detailed interview feedback. Designed to help students and professionals practice interviews with an interactive and intelligent system.",
-    "image": "/hirevo.png",
+    "description": "An AI-powered interview platform that simulates real technical interviews using LLM-based evaluation. Includes role-based authentication, dynamic question generation, answer analysis, real-time scoring, and detailed interview feedback. Designed to help students and professionals practice interviews with an interactive and intelligent system.",
+    "image": "/hirevo_logo.png",
     "tags": [
       "Next.js",
       "FireStore",
@@ -45,7 +45,7 @@
     "id": 3,
     "title": "PathAI :– AI-Powered Career Coach Platform",
     "description": "An AI-driven career guidance platform that analyzes market trends and recommends the best career paths for users based on current industry demand. Allows users to generate professional resumes, take MCQ-based skill assessments, and receive personalized role insights powered by Gemini AI. Built with a scalable architecture using Next.js, Prisma ORM, NeonDB, and Clerk authentication.",
-    "image": "/pathai.png",
+    "image": "/path_ai_logo.png",
     "tags": [
       "Next.js",
       "Prisma",
@@ -65,41 +65,39 @@
   {
     "id": 4,
     "title": "DavTalk :-  Chat application ",
-    "description": "chat appliaction",
-    "image": "/pathai.png",
+    "description": "A real time chat  application with live location sharing and group chat features. Built with Node.js, Express.js, MongoDB, and JWT authentication.",
+    "image": "/devtalk.png",
     "tags": [
-      "React.js",
       "Node.js",
       "Express.js",
       "MongoDB",
       "JWT",
-      "Tailwind CSS",
-      "Framer Motion"
+      "Tailwind CSS"
     ],
-    "category": "fullstack",
+    "category": "backend",
     "githubUrl": "https://github.com/Snehasis13/Chat_App",
     "demoUrl": "",
     "period": "March 2025 - April 2025",
-    "role": "Team Leader & Fullstack Developer",
-    "teamSize": 2
+    "role": "Backend Developer",
+    "teamSize": 1
   },
   {
     "id": 5,
     "title": "Magma :- Real-State Website",
-    "description": "Estate website",
-    "image": "/pathai.png",
+    "description": "A Web3-powered real estate platform that creates digital twins of buildings using blockchain technology. Features immersive 3D visuals, smooth scrolling animations, and interactive elements to manage physical and digital assets.",
+    "image": "/magma.png",
     "tags": [
-      "Java",
-      "JavaFX",
-      "SQL Server",
-      "OpenCV",
-      "IntelliJ IDEA"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GSAP",
+      "Locomotive Scroll"
     ],
-    "category": "backend",
-    "githubUrl": "",
-    "demoUrl": "",
-    "period": "October 2024 - December 2024",
-    "role": "Team Leader",
-    "teamSize": 4
+    "category": "frontend",
+    "githubUrl": "https://github.com/Snehasis13/Magma-RealState",
+    "demoUrl": "https://magma-real-state-beta.vercel.app/",
+    "period": "October 202 - December 2024",
+    "role": "UIUX Developer",
+    "teamSize": 1
   }
 ]

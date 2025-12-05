@@ -23,12 +23,6 @@ const Footer = () => {
       color: 'hover:text-blue-400'
     },
     {
-      name: 'Twitter',
-      icon: FaTwitter,
-      url: 'https://twitter.com/snehasis',
-      color: 'hover:text-sky-400'
-    },
-    {
       name: 'Email',
       icon: FaEnvelope,
       url: 'mailto:snehasiskoley95@gmail.com',
@@ -73,9 +67,9 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
-          
+
           {/* Brand Section */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-1"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -92,7 +86,7 @@ const Footer = () => {
             </div>
             <p className="text-slate-400 leading-relaxed mb-6">
               Full-stack developer driven by a passion for building innovative, high-impact web solutions
-               and turning ideas into reality through clean, efficient, and reliable code.
+              and turning ideas into reality through clean, efficient, and reliable code.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
@@ -102,7 +96,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-10 h-10 bg-slate-800/50 border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 transition-all duration-300 ${social.color} hover:bg-slate-700/50 hover:scale-110 hover:shadow-lg`}
-                  whileHover={{ 
+                  whileHover={{
                     rotate: 360,
                     transition: { duration: 0.3 }
                   }}
@@ -116,7 +110,7 @@ const Footer = () => {
           </motion.div>
 
           {/* Quick Links */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-1"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -144,7 +138,7 @@ const Footer = () => {
           </motion.div>
 
           {/* Contact Info */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-1"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -174,7 +168,7 @@ const Footer = () => {
               ))}
             </ul>
           </motion.div>
-          </div>
+        </div>
 
         {/* Bottom Bar */}
         <motion.div
@@ -199,12 +193,12 @@ const Footer = () => {
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        whileHover={{ 
+        whileHover={{
           scale: 1.1,
           rotate: -90
         }}
         whileTap={{ scale: 0.9 }}
-        transition={{ 
+        transition={{
           duration: 0.3,
           ease: "backOut"
         }}
