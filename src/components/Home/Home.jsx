@@ -112,7 +112,7 @@ function Home() {
       {!isMobile && <BlackHoleBackground />}
 
       <div
-        className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10"
+        className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10"
         ref={contentRef}
       >
         {/* Left column - Text content */}
@@ -126,7 +126,7 @@ function Home() {
             </h1>
           </div>
 
-          <div className="hero-element text-2xl md:text-4xl font-semibold text-slate-200 mb-8 h-16">
+          <div className="hero-element text-2xl md:text-4xl font-semibold text-slate-200 mb-4 lg:mb-8 h-16">
             <TypeWriter
               texts={[
                 "Full Stack developer",
@@ -140,7 +140,7 @@ function Home() {
             />
           </div>
 
-          <p className="hero-element text-slate-300 text-lg mb-10 max-w-2xl leading-relaxed">
+          <p className="hero-element text-slate-300 text-lg mb-6 lg:mb-10 max-w-2xl leading-relaxed">
             Final-year <span className="text-emerald-400 font-semibold">Software Engineering</span> student at LPU with hands-on experience in
             <span className="text-blue-400 font-semibold"> C++, React.js, and Node.js</span>. Passionate about backend development,
             database design, and building <span className="text-violet-400 font-semibold">scalable, high-performance applications</span>.
@@ -197,7 +197,7 @@ function Home() {
           </div>
 
           {/* Tech stack tags */}
-          <div className="hero-element mt-16" ref={techStackRef}>
+          <div className="hero-element mt-8 lg:mt-16" ref={techStackRef}>
             <p className="text-slate-400 mb-6 text-lg font-medium">
               Technologies I work with
             </p>
