@@ -129,10 +129,10 @@ function TechStack() {
     },
     {
       id: 2,
-      name: "DevTalk — Developer Community",
-      description: "A real-time chat platform designed specifically for developers to collaborate and connect.",
-      techUsed: ["React", "MongoDB", "WebSockets", "Node.js", "Express"],
-      highlight: "Features include live chat, real-time location sharing, and developer-centric communication tools for seamless collaboration."
+      name: "PriyoPixcel - E-commerce Platform",
+      description: "Serverless e-commerce app with real-time preview and automated order processing using Google Sheets as a database.",
+      techUsed: ["React 19", "Google Sheets API", "Drive API", "OAuth", "Tailwind CSS"],
+      highlight: "Zero-cost backend infrastructure with seamless Google ecosystem integration."
     },
 
     {

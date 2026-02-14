@@ -184,10 +184,9 @@ const Footer = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
             <p className="text-slate-400 text-sm flex items-center gap-2">
               © {currentYear} Snehasis
-
             </p>
           </div>
         </motion.div>

@@ -1,5 +1,25 @@
 [
   {
+    "id": 6,
+    "title": "PriyoPixcel - E-commerce Platform",
+    "description": "A serverless e-commerce application for customized photo frames with real-time preview and automated order processing. Leverages Google Sheets as a database and Google Drive for asset storage to eliminate backend infrastructure costs.",
+    "image": "/priyopixcel.png",
+    "tags": [
+      "React 19",
+      "Vite",
+      "TailwindCSS",
+      "Google Sheets API",
+      "Google Drive API",
+      "OAuth"
+    ],
+    "category": "fullstack",
+    "githubUrl": "https://github.com/Snehasis13/Priyo_pixcel",
+    "demoUrl": "https://priyo-pixcel.vercel.app/",
+    "period": "Jan 2026 - Present",
+    "role": "Fullstack Developer",
+    "teamSize": 1
+  },
+  {
     "id": 1,
     "title": "Portfolio Website",
     "description": "A modern, high-performance developer portfolio showcasing full-stack projects and UI/UX work. Built using React 19 and TailwindCSS, with Three.js and Framer Motion integrated for immersive 3D visuals and smooth animations. Features include SEO optimization, fully responsive layouts and fast load times.",
@@ -64,7 +84,7 @@
   },
   {
     "id": 4,
-    "title": "DavTalk :-  Chat application ",
+    "title": "DevTalk :-  Chat application ",
     "description": "A real time chat  application with live location sharing and group chat features. Built with Node.js, Express.js, MongoDB, and JWT authentication.",
     "image": "/devtalk.png",
     "tags": [
@@ -76,7 +96,7 @@
     ],
     "category": "backend",
     "githubUrl": "https://github.com/Snehasis13/Chat_App",
-    "demoUrl": "",
+    "demoUrl": "https://devtalk-bice.vercel.app/",
     "period": "March 2025 - April 2025",
     "role": "Backend Developer",
     "teamSize": 1

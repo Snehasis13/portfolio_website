@@ -133,6 +133,7 @@ function Home() {
                 "Software Developer",
                 "Backend Engineer",
                 "Frontend Engineer",
+                "UI/UX Developer",
               ]}
               delay={isMobile ? 100 : 80}
               deleteDelay={isMobile ? 50 : 30}

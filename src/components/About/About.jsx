@@ -45,9 +45,9 @@ function About() {
           impact: "Production deployment"
         },
         {
-          title: "DevTalk:- Developers chatting platform",
-          description: "a real time chat application using React, Node.js, Socket.io, and MongoDB",
-          impact: "end-to-end development"
+          title: "PriyoPixcel:- E-commerce Platform",
+          description: "Serverless e-commerce app with Google Sheets database, Real-time preview and OAuth integration",
+          impact: "Zero-cost infrastructure"
         }
       ],
       color: "from-green-500 to-emerald-500"

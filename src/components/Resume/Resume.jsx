@@ -32,6 +32,17 @@ function Resume() {
   // Memoize static data for performance - Updated with real resume content
   const experiences = useMemo(() => [
     {
+      title: "Fullstack Developer (PriyoPixcel)",
+      company: "Freelance Project",
+      period: "Jan 2026 - Present",
+      location: "Remote",
+      achievements: [
+        "Engineered a serverless e-commerce architecture using React 19, Google Sheets, and Drive, reducing infrastructure overhead",
+        "Implemented complex product customization flows with real-time image previews and secure file uploads",
+        "Integrated Google OAuth and automated order management workflows for seamless administration"
+      ]
+    },
+    {
       title: "Fullstack Developer",
       company: "Personal Projects",
       period: "April 2025 - Present",
@@ -114,6 +125,13 @@ function Resume() {
   // Awards & Scholarships - memoized with actual achievements
   const work = useMemo(() => [
     {
+      title: "PriyoPixcel",
+      year: "Jan 2026 - Present",
+      type: "Freelance Project",
+      achievement: "Built a zero-cost backend infrastructure using Google Ecosystem integrations",
+      description: "Architected a custom e-commerce solution featuring advanced product customization, automated inventory management via Google Sheets, and secure asset handling."
+    },
+    {
       title: "Outlier.ai",
       year: "Nov 2024 - Jan 2025",
       type: "Freelance AI Trainer",
@@ -151,7 +169,7 @@ function Resume() {
               </span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -160,20 +178,20 @@ function Resume() {
               My <span className="gradient-text">Resume</span>
             </motion.h1>
 
-            <motion.div 
+            <motion.div
               className="w-24 h-1.5 bg-gradient-to-r from-emerald-500 to-blue-500 mx-auto mb-8 rounded-full"
               initial={{ width: 0 }}
               animate={{ width: 96 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             />
 
-            <motion.p 
+            <motion.p
               className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              Download my complete resume or view it online to learn more about 
+              Download my complete resume or view it online to learn more about
               my professional experience, skills, and work experience.
             </motion.p>
 
@@ -217,7 +235,7 @@ function Resume() {
                       onError={() => setPdfError(true)}
                       onLoad={() => setPdfError(false)}
                     />
-                    
+
                     {/* Fallback for browsers that don't support PDF viewing */}
                     <div className={`text-center mt-4 p-4 bg-slate-700/30 rounded-lg ${pdfError ? 'bg-red-900/20 border border-red-500/30' : ''}`}>
                       <p className="text-slate-400 text-sm mb-3">
@@ -271,7 +289,7 @@ function Resume() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  whileHover={{ 
+                  whileHover={{
                     y: -5,
                     transition: { duration: 0.3 }
                   }}
@@ -324,38 +342,38 @@ function Resume() {
 
               <div className="flex-1">
                 {education.map((edu, index) => (
-                <motion.div
-                  key={index}
-                  className="glass-effect rounded-2xl p-6 border border-slate-700/50"
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.2 }}
-                  viewport={{ once: true }}
-                  whileHover={{ 
-                    scale: 1.02,
-                    transition: { duration: 0.2 }
-                  }}
-                >
-                  <h3 className="text-lg font-bold text-slate-100 mb-2">
-                    {edu.degree}
-                  </h3>
-                  <p className="text-emerald-400 font-semibold mb-1">
-                    {edu.institution}
-                  </p>
-                  <div className="flex justify-between items-center text-slate-400 text-sm mb-2">
-                    <span>{edu.period}</span>
-                    <span>{edu.location}</span>
-                  </div>
-                  <p className="text-slate-300 font-semibold mb-3">
-                    GPA: {edu.gpa}
-                  </p>
-                  {edu.details && (
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      {edu.details}
+                  <motion.div
+                    key={index}
+                    className="glass-effect rounded-2xl p-6 border border-slate-700/50"
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.2 }}
+                    viewport={{ once: true }}
+                    whileHover={{
+                      scale: 1.02,
+                      transition: { duration: 0.2 }
+                    }}
+                  >
+                    <h3 className="text-lg font-bold text-slate-100 mb-2">
+                      {edu.degree}
+                    </h3>
+                    <p className="text-emerald-400 font-semibold mb-1">
+                      {edu.institution}
                     </p>
-                  )}
-                </motion.div>
-              ))}
+                    <div className="flex justify-between items-center text-slate-400 text-sm mb-2">
+                      <span>{edu.period}</span>
+                      <span>{edu.location}</span>
+                    </div>
+                    <p className="text-slate-300 font-semibold mb-3">
+                      GPA: {edu.gpa}
+                    </p>
+                    {edu.details && (
+                      <p className="text-slate-400 text-sm leading-relaxed">
+                        {edu.details}
+                      </p>
+                    )}
+                  </motion.div>
+                ))}
               </div>
             </div>
 
@@ -376,34 +394,34 @@ function Resume() {
               <div className="flex-1">
                 <div className="space-y-4">
                   {certifications.map((cert, index) => (
-                  <motion.div
-                    key={index}
-                    className="glass-effect rounded-xl p-6 border border-slate-700/50"
-                    initial={{ opacity: 0, x: 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    whileHover={{ 
-                      x: 5,
-                      transition: { duration: 0.2 }
-                    }}
-                  >
-                    <div className="flex items-center gap-3 mb-2">
-                      <FaAward className="text-yellow-400" />
-                      <h3 className="font-bold text-slate-100">
-                        {cert.name}
-                      </h3>
-                    </div>
-                    <p className="text-slate-400 text-sm mb-2">
-                      {cert.issuer} • {cert.year}
-                    </p>
-                    {cert.details && (
-                      <p className="text-slate-300 text-sm leading-relaxed">
-                        {cert.details}
+                    <motion.div
+                      key={index}
+                      className="glass-effect rounded-xl p-6 border border-slate-700/50"
+                      initial={{ opacity: 0, x: 30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      whileHover={{
+                        x: 5,
+                        transition: { duration: 0.2 }
+                      }}
+                    >
+                      <div className="flex items-center gap-3 mb-2">
+                        <FaAward className="text-yellow-400" />
+                        <h3 className="font-bold text-slate-100">
+                          {cert.name}
+                        </h3>
+                      </div>
+                      <p className="text-slate-400 text-sm mb-2">
+                        {cert.issuer} • {cert.year}
                       </p>
-                    )}
-                  </motion.div>
-                ))}
+                      {cert.details && (
+                        <p className="text-slate-300 text-sm leading-relaxed">
+                          {cert.details}
+                        </p>
+                      )}
+                    </motion.div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -431,14 +449,14 @@ function Resume() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.02,
                       transition: { duration: 0.2 }
                     }}
                   >
                     {/* Award background gradient */}
                     <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-yellow-500/5 rounded-xl"></div>
-                    
+
                     <div className="relative">
                       <div className="flex items-start justify-between mb-3">
                         <div className="flex items-center gap-3">
@@ -458,13 +476,13 @@ function Resume() {
                           {work.year}
                         </span>
                       </div>
-                      
+
                       <div className="mb-3">
                         <p className="text-emerald-400 text-sm font-medium">
                           <span className="text-slate-300">Achievement:</span> {work.achievement}
                         </p>
                       </div>
-                      
+
                       <p className="text-slate-400 text-sm leading-relaxed">
                         {work.description}
                       </p>
@@ -498,7 +516,7 @@ function Resume() {
             </h3>
 
             <p className="text-slate-400 text-lg mb-8 max-w-2xl mx-auto">
-              Download my full resume for detailed information about my experience, 
+              Download my full resume for detailed information about my experience,
               projects, and technical skills. Let's build something amazing together!
             </p>
 
