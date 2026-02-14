@@ -2,26 +2,29 @@ import { useMemo } from 'react'
 import { motion } from 'framer-motion'
 import SEOHead from '../SEO/SEOHead'
 import { SEO_CONFIGS } from '../SEO/seoConfigs'
-import { 
-  SiSpringboot, 
-  SiReact, 
-  SiTailwindcss, 
-  SiMysql, 
-  SiMongodb, 
-  SiDocker, 
+import {
+  SiReact,
+  SiTailwindcss,
+  SiMysql,
+  SiMongodb,
+  SiDocker,
   SiGit,
-  SiIntellijidea,
   SiPostman,
-  SiMariadb,
   SiFramer,
-  SiCloudinary,
   SiVercel,
   SiGithub,
-  SiJavascript,
   SiTypescript,
-  SiNeo4J
+  SiFirebase,
+  SiExpress,
+  SiDjango,
+  SiNextdotjs,
+  SiPostgresql,
+  SiJupyter,
+  SiOpenai,
+  SiGoogle,
 } from 'react-icons/si'
-import { FaDatabase, FaTools, FaCloud, FaRocket, FaJava, FaCube, FaBox, FaCode, FaBrain } from 'react-icons/fa'
+import { FaDatabase, FaTools, FaCloud, FaRocket, FaCube, FaCode, FaBrain, FaNodeJs } from 'react-icons/fa'
+import { VscVscode } from 'react-icons/vsc'
 
 function TechStack() {
   // Tech Stack data organized by categories
@@ -34,11 +37,12 @@ function TechStack() {
       bgColor: "bg-orange-500/10",
       borderColor: "border-orange-500/20",
       technologies: [
-        { name: "NodeJs", icon: FaJava, level: "Expert", color: "#ED8B00" },
-        { name: "ExpressJs", icon: SiSpringboot, level: "Advanced", color: "#6DB33F" },
-        { name: "Django", icon: SiSpringboot, level: "Advanced", color: "#6DB33F" },
-        { name: "WebSocket", icon: FaCode, level: "Intermediate", color: "#FF6B6B" },
-        { name: "Maven", icon: FaBox, level: "Proficient", color: "#C71A36" }
+        { name: "NodeJs", icon: FaNodeJs, level: "Expert", color: "#339933" },
+        { name: "ExpressJs", icon: SiExpress, level: "Advanced", color: "#FFFFFF" },
+        { name: "Django", icon: SiDjango, level: "Advanced", color: "#3776AB" },
+        { name: "TypeScript", icon: SiTypescript, level: "Advanced", color: "#3178C6" },
+        { name: "WebSocket", icon: FaCode, level: "Intermediate", color: "#FF6B6B" }
+
       ]
     },
     {
@@ -51,7 +55,7 @@ function TechStack() {
       technologies: [
         { name: "React.js", icon: SiReact, level: "Advanced", color: "#61DAFB" },
         { name: "TailwindCSS", icon: SiTailwindcss, level: "Advanced", color: "#06B6D4" },
-        { name: "Next.js", icon: FaCube, level: "Advanced", color: "#000000" },
+        { name: "Next.js", icon: SiNextdotjs, level: "Advanced", color: "#000000" },
         { name: "Framer Motion", icon: SiFramer, level: "Intermediate", color: "#0055FF" },
         { name: "shadcn/ui", icon: FaCube, level: "Intermediate", color: "#000000" }
 
@@ -67,8 +71,8 @@ function TechStack() {
       technologies: [
         { name: "MySQL", icon: SiMysql, level: "Advanced", color: "#4479A1" },
         { name: "MongoDB", icon: SiMongodb, level: "Advanced", color: "#003545" },
-        { name: "postgreSQL", icon: SiMongodb, level: "Intermediate", color: "#47A248" },
-        { name: "FireStore", icon: SiNeo4J, level: "Intermediate", color: "#008CC1" }
+        { name: "PostgreSQL", icon: SiPostgresql, level: "Intermediate", color: "#336791" },
+        { name: "FireStore", icon: SiFirebase, level: "Intermediate", color: "#FFCA28" }
       ]
     },
     {
@@ -79,9 +83,9 @@ function TechStack() {
       bgColor: "bg-purple-500/10",
       borderColor: "border-purple-500/20",
       technologies: [
-        { name: "VS Code", icon: FaCode, level: "Expert", color: "#007ACC" },
+        { name: "VS Code", icon: VscVscode, level: "Expert", color: "#007ACC" },
         { name: "Git", icon: SiGit, level: "Expert", color: "#F05032" },
-        { name: "Jupiter Notebook", icon: SiIntellijidea, level: "Advanced", color: "#000000" },
+        { name: "Jupyter Notebook", icon: SiJupyter, level: "Advanced", color: "#F37626" },
         { name: "Postman", icon: SiPostman, level: "Advanced", color: "#FF6C37" }
       ]
     },
@@ -104,11 +108,11 @@ function TechStack() {
       title: "AI & Automation",
       icon: FaBrain,
       color: "text-violet-400",
-      bgColor: "bg-violet-500/10", 
+      bgColor: "bg-violet-500/10",
       borderColor: "border-violet-500/20",
       technologies: [
-        { name: "Gamini", icon: FaBrain, level: "Expert", color: "#10A37F" },
-        { name: "ChatGPT", icon: FaBrain, level: "Advanced", color: "#10A37F" },
+        { name: "Gemini", icon: SiGoogle, level: "Expert", color: "#8E75B2" },
+        { name: "ChatGPT", icon: SiOpenai, level: "Advanced", color: "#412991" },
         { name: "Claude AI", icon: FaBrain, level: "Intermediate", color: "#CC785C" }
       ]
     }
@@ -169,7 +173,7 @@ function TechStack() {
               </span>
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -178,13 +182,13 @@ function TechStack() {
               <span className="gradient-text">Technologies</span> & Tools
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              A complete showcase of the technologies and tools I rely on to develop robust, scalable applications. 
+              A complete showcase of the technologies and tools I rely on to develop robust, scalable applications.
               Covering everything from backend logic to cloud infrastructure.
             </motion.p>
           </div>
@@ -201,7 +205,7 @@ function TechStack() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: categoryIndex * 0.1 }}
                   viewport={{ once: true }}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.02,
                     transition: { duration: 0.2 }
                   }}
@@ -226,14 +230,14 @@ function TechStack() {
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ delay: 0.3 + techIndex * 0.1 }}
                           viewport={{ once: true }}
-                          whileHover={{ 
+                          whileHover={{
                             x: 5,
                             backgroundColor: "rgba(51, 65, 85, 0.4)"
                           }}
                         >
                           <div className="flex items-center gap-3">
-                            <TechIcon 
-                              className="w-5 h-5" 
+                            <TechIcon
+                              className="w-5 h-5"
                               style={{ color: tech.color }}
                             />
                             <span className="font-medium text-slate-200">
@@ -255,7 +259,7 @@ function TechStack() {
           {/* Project Highlights */}
           <div className="mb-16">
             <div className="text-center mb-12">
-              <motion.h2 
+              <motion.h2
                 className="text-3xl font-bold gradient-text mb-4"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -264,7 +268,7 @@ function TechStack() {
               >
                 Tech Stack in Action
               </motion.h2>
-              <motion.p 
+              <motion.p
                 className="text-slate-400 max-w-2xl mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -284,7 +288,7 @@ function TechStack() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  whileHover={{ 
+                  whileHover={{
                     scale: 1.02,
                     transition: { duration: 0.2 }
                   }}
@@ -295,7 +299,7 @@ function TechStack() {
                   <p className="text-slate-400 mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  
+
                   <div className="mb-4">
                     <p className="text-emerald-400 font-medium text-sm mb-2">
                       Key Technologies:
@@ -341,13 +345,13 @@ function TechStack() {
             </motion.div>
 
             <h3 className="text-3xl font-bold text-slate-100 mb-4">
-                Let's Build Something Exceptional
-              </h3>
+              Let's Build Something Exceptional
+            </h3>
 
-              <p className="text-slate-400 text-lg mb-8 max-w-2xl mx-auto">
-                Ready to bring your ideas to life with modern technology? 
-                Let’s collaborate and create powerful, innovative solutions together.
-              </p>
+            <p className="text-slate-400 text-lg mb-8 max-w-2xl mx-auto">
+              Ready to bring your ideas to life with modern technology?
+              Let’s collaborate and create powerful, innovative solutions together.
+            </p>
 
             <motion.div
               className="flex flex-wrap justify-center gap-4"

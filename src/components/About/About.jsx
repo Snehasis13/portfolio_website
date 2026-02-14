@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useMemo, lazy } from "react";
-import { 
-  FaServer, 
+import {
+  FaServer,
   FaRocket,
   FaLightbulb,
   FaGraduationCap,
@@ -13,19 +13,19 @@ const GitHubContributions = lazy(() => import('./GitHubContributions'));
 
 function About() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  
+
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     // Use passive listener for better performance
     const handleResize = () => {
       // Debounce resize events
       clearTimeout(window.resizeTimeout);
       window.resizeTimeout = setTimeout(checkMobile, 100);
     };
-    
+
     window.addEventListener('resize', handleResize, { passive: true });
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -39,13 +39,13 @@ function About() {
       category: "Project Excellence",
       icon: <FaRocket />,
       achievements: [
-        { 
-          title: "HiRevo:- AI Interviewer Platform", 
+        {
+          title: "HiRevo:- AI Interviewer Platform",
           description: "Full-stack web application with Nextjs, ShadcnUi, Google AI integration, Vapi, typescript, and TailwindCSS",
           impact: "Production deployment"
         },
-        { 
-          title: "DevTalk:- Developers chatting platform", 
+        {
+          title: "DevTalk:- Developers chatting platform",
           description: "a real time chat application using React, Node.js, Socket.io, and MongoDB",
           impact: "end-to-end development"
         }
@@ -53,16 +53,16 @@ function About() {
       color: "from-green-500 to-emerald-500"
     },
     {
-      category: "Technical Excellence", 
+      category: "Technical Excellence",
       icon: <FaCode />,
       achievements: [
-        { 
-          title: "Cloud Computing", 
+        {
+          title: "Cloud Computing",
           description: "Docker, Kubernetes, and AWS deployment",
           impact: "Industry-standard skills"
         },
-        { 
-          title: "Generative AI with Large Language Models", 
+        {
+          title: "Generative AI with Large Language Models",
           description: "AI integration using OpenAI GPT-4 and Google Generative AI, Reinforcement learning",
           impact: "Production-ready"
         }
@@ -73,13 +73,13 @@ function About() {
       category: "Academic Achievement",
       icon: <FaGraduationCap />,
       achievements: [
-        { 
-          title: "Computer Science Degree", 
+        {
+          title: "Computer Science Degree",
           description: "Lovely professional university with a strong academic record",
           impact: "Strong foundation"
         },
-        { 
-          title: "Continuous Learning", 
+        {
+          title: "Continuous Learning",
           description: "Self-driven skill development & technology adoption",
           impact: "Growth mindset"
         }
@@ -137,7 +137,7 @@ function About() {
             className="space-y-6"
             initial={{ opacity: 0, x: isMobile ? 0 : -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ 
+            transition={{
               duration: isMobile ? 0.4 : 0.8,
               ease: [0.25, 0.1, 0.25, 1]
             }}
@@ -154,7 +154,7 @@ function About() {
               <div className="relative">
                 <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden glass-effect p-1">
                   <img
-                    src="/Mypic.jpeg"
+                    src="/port1.jpeg"
                     alt="Snehasis"
                     className="w-full h-full object-cover rounded-full"
                     loading="lazy"
@@ -175,16 +175,16 @@ function About() {
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
                   a <span className="text-blue-400 font-semibold">Full-Stack Developer </span>
-                   passionate about designing and delivering scalable, enterprise-grade applications using 
-                   <span className="text-green-400 font-semibold"> React/Next.js</span> and 
-                   <span className="text-green-400 font-semibold"> Node.js</span>.
+                  passionate about designing and delivering scalable, enterprise-grade applications using
+                  <span className="text-green-400 font-semibold"> React/Next.js</span> and
+                  <span className="text-green-400 font-semibold"> Node.js</span>.
                 </p>
                 <p>
-                  With strong expertise in backend architecture, microservices, and modern frontend technologies, 
+                  With strong expertise in backend architecture, microservices, and modern frontend technologies,
                   I build scalable, high-performance solutions that support business growth and deliver seamless user experiences.
                 </p>
                 <p>
-                  I focus on writing clean, maintainable code while staying aligned with the latest industry trends and best practices. 
+                  I focus on writing clean, maintainable code while staying aligned with the latest industry trends and best practices.
                   My goal is to build applications that deliver seamless performance, reliability, and exceptional user experiences.
                 </p>
               </div>
@@ -196,7 +196,7 @@ function About() {
             className="grid grid-cols-2 gap-4"
             initial={{ opacity: 0, x: isMobile ? 0 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ 
+            transition={{
               duration: isMobile ? 0.4 : 0.8,
               delay: 0.2,
               ease: [0.25, 0.1, 0.25, 1]
@@ -209,13 +209,13 @@ function About() {
                 className="card text-center"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
+                transition={{
                   duration: 0.5,
                   delay: index * 0.1 + 0.3,
                   ease: [0.25, 0.1, 0.25, 1]
                 }}
-                whileHover={{ 
-                  scale: 1.05, 
+                whileHover={{
+                  scale: 1.05,
                   y: -5,
                   transition: { duration: 0.2 }
                 }}
@@ -236,13 +236,13 @@ function About() {
           className="mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ 
+          transition={{
             duration: 0.8,
             ease: [0.25, 0.1, 0.25, 1]
           }}
           viewport={{ once: true, margin: "-50px" }}
         >
-          <motion.h3 
+          <motion.h3
             className="text-3xl font-bold text-center mb-12 gradient-text"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -251,24 +251,24 @@ function About() {
           >
             Professional Highlights
           </motion.h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {professionalHighlights.map((highlight, highlightIndex) => (
               <motion.div
                 key={highlightIndex}
                 className="card group"
-                initial={{ 
-                  opacity: 0, 
+                initial={{
+                  opacity: 0,
                   y: 30
                 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
+                transition={{
                   duration: 0.6,
                   delay: highlightIndex * 0.2,
                   ease: [0.25, 0.1, 0.25, 1]
                 }}
-                whileHover={{ 
-                  scale: 1.02, 
+                whileHover={{
+                  scale: 1.02,
                   y: -5,
                   transition: { duration: 0.2 }
                 }}
@@ -280,7 +280,7 @@ function About() {
                   </div>
                   <h4 className="font-bold text-slate-100 text-lg">{highlight.category}</h4>
                 </div>
-                
+
                 <div className="space-y-4">
                   {highlight.achievements.map((achievement, achievementIndex) => (
                     <motion.div
@@ -288,9 +288,9 @@ function About() {
                       className="bg-slate-800/30 p-4 rounded-lg border border-slate-700/30 hover:bg-slate-700/30 transition-colors"
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ 
-                        duration: 0.4, 
-                        delay: highlightIndex * 0.2 + achievementIndex * 0.1 
+                      transition={{
+                        duration: 0.4,
+                        delay: highlightIndex * 0.2 + achievementIndex * 0.1
                       }}
                       viewport={{ once: true }}
                     >
@@ -312,7 +312,7 @@ function About() {
           className="grid grid-cols-2 md:grid-cols-4 gap-6"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ 
+          transition={{
             duration: 0.8,
             ease: [0.25, 0.1, 0.25, 1]
           }}
@@ -329,12 +329,12 @@ function About() {
               className="card text-center"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ 
+              transition={{
                 duration: 0.5,
                 delay: index * 0.1 + 0.2,
                 ease: [0.25, 0.1, 0.25, 1]
               }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 y: -5,
                 transition: { duration: 0.2 }
@@ -345,8 +345,8 @@ function About() {
                 className="text-3xl font-bold gradient-text mb-2"
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ 
-                  duration: 0.6, 
+                transition={{
+                  duration: 0.6,
                   delay: index * 0.1 + 0.4,
                   ease: "backOut"
                 }}

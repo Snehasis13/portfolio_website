@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import TypeWriter from "./TypeWriter";
 import BlackHoleBackground from "./BlackHoleBackground";
-import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 import {
   SiNodedotjs,
   SiReact,
@@ -182,6 +182,15 @@ function Home() {
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="h-7 w-7" />
+              </a>
+              <a
+                href="https://codolio.com/profile/Intensity13"
+                target="_blank"
+                rel="noreferrer"
+                className={`glass-effect text-slate-300 hover:text-emerald-400 transition-all p-4 rounded-xl ${!isMobile ? 'hover:-translate-y-1 transform duration-300 hover:shadow-lg hover:shadow-emerald-500/20' : ''}`}
+                aria-label="Codolio"
+              >
+                <FaCode className="h-7 w-7" />
               </a>
             </div>
           </div>

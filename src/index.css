@@ -273,16 +273,3 @@ body {
 .animate-pulse-slow {
   animation: pulse-slow 4s ease-in-out infinite;
 }
- 
-// Review this logic
-// Added for better accessibility
-// TODO: Refactor this later
-// accessible label added
-// accessible label added
-// TODO: Refactor this later
-// Review this logic
-// TODO: Refactor this later
-// Temporary fix
-/* Fixed bug related to state update */
- 
-// accessible label added

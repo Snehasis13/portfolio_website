@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart, FaPhone, FaMapMarkerAlt, FaCode } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 const Footer = () => {
@@ -27,6 +27,12 @@ const Footer = () => {
       icon: FaEnvelope,
       url: 'mailto:snehasiskoley95@gmail.com',
       color: 'hover:text-red-400'
+    },
+    {
+      name: 'Codolio',
+      icon: FaCode,
+      url: 'https://codolio.com/profile/Intensity13',
+      color: 'hover:text-emerald-400'
     }
   ]
 
