@@ -340,7 +340,7 @@ function Resume() {
                 </h2>
               </div>
 
-              <div className="flex-1">
+              <div className="flex-1 space-y-6">
                 {education.map((edu, index) => (
                   <motion.div
                     key={index}
