@@ -108,8 +108,8 @@ function Home() {
   }, [animationsEnabled]);
 
   return (
-    <section className="min-h-screen flex items-center pt-32 pb-20 relative overflow-hidden">
-      <BlackHoleBackground />
+    <section className="md:min-h-screen flex md:items-center pt-24 md:pt-32 pb-6 md:pb-20 relative overflow-hidden">
+      {!isMobile && <BlackHoleBackground />}
 
       <div
         className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10"
