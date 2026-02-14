@@ -47,7 +47,7 @@ function Home() {
   // Performance check to decide whether to show 3D model and heavy animations
   useEffect(() => {
     const checkPerformance = () => {
-      const mobile = window.innerWidth < 768;
+      const mobile = window.innerWidth < 1024;
       const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
       const isHighPerformance = !connection || connection.effectiveType === '4g';
       const hasGoodHardware = window.devicePixelRatio <= 2;
@@ -108,7 +108,7 @@ function Home() {
   }, [animationsEnabled]);
 
   return (
-    <section className="md:min-h-screen flex md:items-center pt-24 md:pt-32 pb-6 md:pb-20 relative overflow-hidden">
+    <section className="lg:min-h-screen flex lg:items-center pt-24 lg:pt-32 pb-6 lg:pb-20 relative overflow-hidden">
       {!isMobile && <BlackHoleBackground />}
 
       <div

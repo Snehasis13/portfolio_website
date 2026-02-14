@@ -61,7 +61,7 @@ function Navbar() {
 
     // Close mobile menu on resize (when switching to desktop)
     const handleResize = () => {
-      if (window.innerWidth >= 768 && isOpen) {
+      if (window.innerWidth >= 1024 && isOpen) {
         setIsOpen(false);
       }
     };
@@ -158,8 +158,8 @@ function Navbar() {
   return (
     <motion.nav
       className={`fixed w-full z-30 transition-all duration-500 ${scrolled
-          ? "glass-effect shadow-xl border-b border-slate-700/50 backdrop-blur-xl"
-          : "bg-transparent"
+        ? "glass-effect shadow-xl border-b border-slate-700/50 backdrop-blur-xl"
+        : "bg-transparent"
         }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -188,7 +188,7 @@ function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden lg:flex lg:items-center lg:space-x-8">
             <NavLink
               sectionId="home"
               active={activeSection === "home"}
@@ -241,7 +241,7 @@ function Navbar() {
           </div>
 
           {/* Mobile menu button with improved styling */}
-          <div className="md:hidden flex items-center gap-3">
+          <div className="lg:hidden flex items-center gap-3">
             <ThemeSwitcher />
 
             <motion.button
@@ -271,7 +271,7 @@ function Navbar() {
 
       {/* Enhanced Mobile Menu Overlay */}
       <motion.div
-        className={`fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-40 md:hidden ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'
+        className={`fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-40 lg:hidden ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'
           }`}
         initial={{ opacity: 0 }}
         animate={{ opacity: isOpen ? 1 : 0 }}
@@ -281,7 +281,7 @@ function Navbar() {
 
       {/* Redesigned Mobile Menu */}
       <motion.div
-        className={`fixed right-4 top-20 w-80 max-w-[calc(100vw-2rem)] bg-slate-900/95 backdrop-blur-xl border border-slate-700/50 rounded-2xl shadow-2xl shadow-black/50 z-50 md:hidden overflow-hidden`}
+        className={`fixed right-4 top-20 w-80 max-w-[calc(100vw-2rem)] bg-slate-900/95 backdrop-blur-xl border border-slate-700/50 rounded-2xl shadow-2xl shadow-black/50 z-50 lg:hidden overflow-hidden`}
         initial={{ opacity: 0, scale: 0.95, x: 20, y: -20 }}
         animate={{
           opacity: isOpen ? 1 : 0,
@@ -381,8 +381,8 @@ function NavLink({ label, active, onClick }) {
     <motion.button
       onClick={onClick}
       className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${active
-          ? "text-blue-400 bg-blue-500/10"
-          : "text-slate-300 hover:text-blue-400 hover:bg-slate-800/50"
+        ? "text-blue-400 bg-blue-500/10"
+        : "text-slate-300 hover:text-blue-400 hover:bg-slate-800/50"
         }`}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
@@ -407,8 +407,8 @@ function MobileNavLink({ icon, label, onClick, active }) {
     <motion.button
       onClick={onClick}
       className={`group w-full flex items-center gap-4 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${active
-          ? "bg-gradient-to-r from-blue-500/20 to-violet-500/20 text-blue-400 border border-blue-500/30 shadow-lg shadow-blue-500/10"
-          : "text-slate-300 hover:bg-slate-800/50 hover:text-blue-300 border border-transparent hover:border-slate-600/30"
+        ? "bg-gradient-to-r from-blue-500/20 to-violet-500/20 text-blue-400 border border-blue-500/30 shadow-lg shadow-blue-500/10"
+        : "text-slate-300 hover:bg-slate-800/50 hover:text-blue-300 border border-transparent hover:border-slate-600/30"
         }`}
       whileHover={{ scale: 1.02, x: 4 }}
       whileTap={{ scale: 0.98 }}
@@ -419,8 +419,8 @@ function MobileNavLink({ icon, label, onClick, active }) {
       {/* Icon Container */}
       <motion.div
         className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 ${active
-            ? "bg-gradient-to-r from-blue-500 to-violet-500 text-white shadow-lg"
-            : "bg-slate-800/50 text-slate-400 group-hover:bg-slate-700/70 group-hover:text-blue-400"
+          ? "bg-gradient-to-r from-blue-500 to-violet-500 text-white shadow-lg"
+          : "bg-slate-800/50 text-slate-400 group-hover:bg-slate-700/70 group-hover:text-blue-400"
           }`}
         whileHover={{ rotate: active ? 0 : 5 }}
       >
