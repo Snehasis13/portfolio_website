@@ -22,12 +22,12 @@
   {
     "id": 1,
     "title": "Portfolio Website",
-    "description": "A modern, high-performance developer portfolio showcasing full-stack projects and UI/UX work. Built using React 19 and TailwindCSS, with Three.js and Framer Motion integrated for immersive 3D visuals and smooth animations. Features include SEO optimization, fully responsive layouts and fast load times.",
+    "description": "A modern, high-performance developer portfolio showcasing full-stack projects and UI/UX work. Built using React 19 and TailwindCSS, with Framer Motion and GSAP for smooth animations. Features include SEO optimization, fully responsive layouts and fast load times.",
     "image": "/logo.png",
     "tags": [
       "React 19",
       "TailwindCSS",
-      "Three.js",
+      "GSAP",
       "Framer Motion",
       "Vite",
       "Vercel",
