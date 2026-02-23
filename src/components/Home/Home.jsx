@@ -14,19 +14,14 @@ import {
 } from "react-icons/si";
 
 // Lazy load heavy dependencies only when needed
-let HeroModel = null;
 let gsap = null;
 let ScrollTrigger = null;
 
 // Dynamic imports for better mobile performance
 const loadHeavyDependencies = async () => {
   try {
-    const [heroModelModule, gsapModule] = await Promise.all([
-      import("./HeroModel"),
-      import("gsap")
-    ]);
+    const gsapModule = await import("gsap");
 
-    HeroModel = heroModelModule.default;
     gsap = gsapModule.default;
 
     const scrollTriggerModule = await import("gsap/ScrollTrigger");
@@ -40,7 +35,6 @@ const loadHeavyDependencies = async () => {
 function Home() {
   const contentRef = useRef(null);
   const techStackRef = useRef(null);
-  const [show3D, setShow3D] = useState(false);
   const [animationsEnabled, setAnimationsEnabled] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -54,7 +48,6 @@ function Home() {
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       setIsMobile(mobile);
-      setShow3D(isHighPerformance && hasGoodHardware && !mobile && !prefersReducedMotion);
       setAnimationsEnabled(!mobile && !prefersReducedMotion);
     };
 
